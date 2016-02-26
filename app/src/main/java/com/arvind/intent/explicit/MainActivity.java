@@ -2,6 +2,7 @@ package com.arvind.intent.explicit;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -28,6 +29,10 @@ public class MainActivity extends Activity {
         startActivityForResult(intent, REQUEST_CODE);
     }
 
+    public void openBrowser(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.arvindiyer.xyz"));
+        startActivity(intent);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {

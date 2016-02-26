@@ -26,4 +26,17 @@
         android:onClick="onClick"
         android:text="Calling an intent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/openBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startintent"
+        android:onClick="openBrowser"
+        android:text="Open Browser" />
 </RelativeLayout>

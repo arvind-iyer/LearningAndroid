@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
 public class ResultActivity extends Activity {
     @Override
     public void onCreate(Bundle bundle) {
